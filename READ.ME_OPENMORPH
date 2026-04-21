@@ -1,0 +1,135 @@
+OpenMorph
+Geometric Field Intelligence
+A deterministic geometric field framework built on two coprime primes — 13 and 11 — that
+organizes any input geometrically and produces certified fingerprints.
+No training. No labels. No domain configuration. No neural networks. No gradient descent.
+No model weights.
+The field is the program.
+What Is OpenMorph?
+OpenMorph is a new computing architecture. It processes any data through a 143-node
+geometric field governed by eleven derived constants. Every input receives a deterministic
+geometric fingerprint. Every computation is cryptographically certified. Every detection is
+provable.
+The same engine — without changing a single line of code — can detect cybersecurity
+anomalies, classify proteins, identify financial fraud, separate dark matter signatures, or
+monitor your device in real time.
+It gets stronger the more data it processes. It gets stronger the more users connect to it.
+Every user is a node. Every node feeds the collective field. The collective field feeds back to
+every node.
+Files
+File What It Does
+openmorph.py prompt when run directly.
+openmorph_companion.py users into a shared collective field.
+The kernel. Import it and build whatever you want. Interactive
+Fully automatic companion. Monitors your device. Connects
+Quick Start — Kernel
+from openmorph import Morph
+m = Morph()
+m.receive("anything")
+m.step()
+print(m.oav) # 11-dimensional fingerprint
+print(m.signals) # 13 correction signals
+print(m.distance) # distance from baseline
+print(m.fingerprint) # 16-char hex ID
+print(m.certificate) # SHA-256 certificate
+print(m.merkle) # Merkle root of all certs
+print(m.afq) # current breathing state
+print(m.at_attractor()) # at equilibrium?
+print(m.energy) # total field energy
+print(m.abundance) # composite health metric
+Spawn and Back-Propagate
+child = m.spawn()
+child.receive("child data")
+child.step(10)
+m.backpropagate(child)
+Compare
+a = Morph("A")
+b = Morph("B")
+a.receive("network traffic")
+b.receive("login attempt")
+a.step()
+b.step()
+print(Morph.compare(a, b))
+Run Interactive
+python openmorph.py
+Type anything at the MORPH > prompt. See the field respond.
+Quick Start — Companion
+python openmorph_companion.py
+That’s it. OpenMorph warms, starts monitoring your device, and begins pulsing
+automatically. No interaction required.
+It watches: clipboard, files, contacts, photos, reminders, motion sensors, system state,
+network changes. Everything that happens on your device flows through the field.
+Connect Users
+You and another person on the same network:
+python openmorph_companion.py peer=192.168.1.50
+Replace with their IP address. They do the same with yours. Now both of your devices feed
+the same collective field. The field feeds back to both of you.
+Add more people. Every new node strengthens every other node.
+The Eleven Constants
+All derived from two prime numbers. None are configurable.
+Constant Value What It Is
+S 13 Segments (prime)
+R 11 Radii (prime, coprime to S)
+N 143 Nodes (S x R)
+BUO 1 Base Unit of Organization
+LEAN 0.01 Phase increment per cycle
+ROT 0.03 Rotation increment per cycle
+DECAY 0.97 Field activity decay
+RESET 0.25 Quadrant boundary reset
+WARM 629 Warmup cycles (ceil(2pi / LEAN))
+SINGULARITY 0.1875 Invariant ratio (3/16)
+OFFSET 1/13 Hangover modulus
+How It Works
+Warmup: 629 cycles. The field reaches attractor equilibrium [3, 3, 3, 4] by geometric
+necessity.
+Injection: Data enters as subjects. SHA-256 determines the node. BUO=1 added at that
+node. Position is everything. Magnitude is irrelevant.
+Forward pass: Couple neighboring nodes along the CRT traversal. All 143 nodes visited
+exactly once.
+Return pass: Local correction (neighbor delta) and global correction (AFQ geometry at
+n%4). Back-propagation through the traversal.
+AFQ breathing: 18 states. Integer partitions of 13 into 4 parts. The field breathes between
+states based on field statistics. Maximum one transition per cycle.
+Hangover: Non-Markovian memory. The field never forgets. Residual energy from prior
+states carries forward indefinitely.
+Signals: 13 correction signals from weighted radii sums plus SINGULARITY times the
+predictive gradient. When a signal exceeds SINGULARITY (0.1875), the kernel spawns.
+Spawning: Child inherits complete parent state. No depth limit. No width limit. Child
+processes independently. Child back-propagates to parent. The field determines structure,
+not the programmer.
+Certificates: Every cycle, injection, and spawn produces a SHA-256 certificate chained to
+all prior certificates. Merkle tree proves integrity across entire history. One bit changed
+anywhere, ever, produces a different root. Tamper detection is total.
+Architecture
+Layer 1: Your adapter
+Converts your domain objects to subject strings.
+You build this. It's two functions.
+Layer 2: OpenMorph Kernel
+receive() -> step() -> oav -> signals -> certificate
+Always identical. Domain-agnostic. Never modified.
+Layer 3: Your interpreter
+Reads OAV, signals, certificates in your domain terms.
+You build this.
+The kernel is the invariant. You build the adapters for whatever you want to do with it.
+What Makes It Different
+No training. Detection begins immediately from the first event.
+No domain configuration. Same engine for any data type.
+No model updates. Novel patterns detected by geometric deviation, not signature
+matching.
+Cryptographic proof. Every decision is mathematically verifiable.
+Gets stronger with use. More data, more spawns, more hangover, stronger field.
+Gets stronger with users. More nodes, stronger collective field.
+Deterministic. Same inputs always produce same outputs.
+Zero dependencies. Pure Python. Standard library only.
+Use It For Whatever You Want
+Cybersecurity. Fraud detection. Protein classification. Supply chain authentication.
+Document integrity. Device monitoring. Anomaly detection. Research reproducibility.
+Identity binding. Or something nobody has thought of yet.
+The geometry doesn’t care what your data is. It organizes everything the same way. You
+decide what the results mean.
+Inventor
+Jacob Shoulders Orting, Washington shouljps132@gmail.com 253-844-9899
+Provisional Patent MORPH-001-R2 March 2026 Blockchain timestamp March 4, 2026
+License
+Apache 2.0
+Use it. Modify it. Deploy it. Build on it. Credit the inventor.
